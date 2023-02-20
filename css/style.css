@@ -1,0 +1,18 @@
+body {
+background-color: #e3c676;
+color: #6d3219;
+font-size: 200%;
+font-family: 'Labrada', serif;
+}
+h1, h2, h3, h4, h5 {
+    font-family:'Gloock', serif;
+}
+header {
+    text-align: center;
+}
+#hero, footer {
+    text-align: center;
+    background-color:#a38b61 ;
+    border: 8px solid #6b5c41;
+
+}
