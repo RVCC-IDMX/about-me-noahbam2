@@ -3,7 +3,7 @@ background-color: #928052;
 color: #6d3219;
 font-size: 200%;
 font-family: 'Labrada', serif;
-padding: 200px; 
+padding: 100px; 
 width: auto;
 
 }
@@ -13,6 +13,7 @@ h1, h2, h3, h4, h5 {
 }
 h2 {
     font-size: 40pt;
+    margin: 1rem;
 }
 header {
     text-align: center;
@@ -23,7 +24,10 @@ header {
     text-align: center;
     background-color: #e4c692;
     border: 8px solid #6b5c41;
-    margin-top: 20px;
+    margin-top: 20fr;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 /*Hero*/
 
@@ -57,8 +61,28 @@ header {
     max-width: 150rem;
     margin: 0 auto;
 }
+
+/* Dropcaps */
+
 #lit div p:first-letter {
     color:#0a0604;
     float:left;
     font-size: 4rem;
 }
+/* Media */
+ @media screen and (min-width: 60em) {
+figure {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+    
+figcaption {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem
+}
+
+};
+
+ 
