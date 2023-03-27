@@ -8,7 +8,7 @@ width: auto;
 
 }
 h1, h2, h3, h4, h5 {
-    font-family:'Gloock', serif;
+    font-family:sans-serif;
     text-align: center;
 }
 h2 {
@@ -24,8 +24,10 @@ header {
     text-align: center;
     background-color: #e4c692;
     border: 8px solid #6b5c41;
+    width: 12em;
     margin-top: 20fr;
     display: flex;
+    color: gray;
     flex-direction: column;
     align-items: center;
 }
@@ -112,5 +114,8 @@ figcaption {
             display: block;
         }
     }
-
- 
+    .videowrapper {
+        position: relative;
+        left: 35rem;
+    
+    }
