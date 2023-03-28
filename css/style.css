@@ -74,7 +74,7 @@ header {
     font-size: 4rem;
 }
 /* Media */
- @media screen and (min-width: 60em) {
+ @media screen and (min-width: 5em) {
 figure {
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -94,8 +94,8 @@ figcaption {
         max-width: 100%;
         columns: 40rem;
     }
-
 }
+
     @media screen and (min-width: 100em) {
         
         #gallery {
@@ -113,14 +113,27 @@ figcaption {
         figure {
             display: block;
         }
+    
     }
-
+    
     .videowrapper {
         border: 8px solid #6b5c41;
-        background-color: #e4c692;
-        display: flex;
+        background-color:#e4c692;
+        width: ;
+        columns: auto;
+        display: grid;
         align-items: center;
         justify-content: center;
         margin: 15px;
         padding: 20px;
+        columns: auto;
     }
+    @media screen and (min-width: 20em) {
+        iframe {
+            display: flex;
+            width: fit-content;
+            height: fit-content;
+
+        }
+    }
+
