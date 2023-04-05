@@ -136,4 +136,8 @@ figcaption {
 
         }
     }
+    /* Contact Form*/
+    #formelements {
+        display: grid;
+    }
 

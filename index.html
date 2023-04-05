@@ -119,6 +119,69 @@
 
 </article>
 
+<section id="contact">
+
+    <h2>Contact Us</h2>
+
+    <form id="contactform" name="contactForm" method="post"
+    data-netfly="true">
+
+        <fieldset>
+            <legend>Contact Form</legend>
+
+            <div id="formelements">
+                    <!--Name-->
+            <label for="name">Name (Required)</label> 
+            <input type="Text" id="name" name="name" required>
+
+            <!-- Email -->
+            <label for="email">Email (Required)</label> 
+            <input type="email" id="email" name="email" required>
+
+            <!-- Phone -->
+            <label for="Phone #">Phone number (Optional)</label> 
+            <input type="tel" id="Phone #" name="Phone #">
+
+            <!--Phone Type-->
+                <label for="phonetype">Phone Type (Optional)</label>
+                <select id="phonetype" name="phonetype">
+                    <option value="" selected>Select phone type</option>
+                    <option value="Mobile">Mobile</option>
+                    <option value="Work">Work</option>
+                    <option value="Home">Home</option>
+                </select>
+
+                <!--Message-->
+                <label for="Your Comment">comments (Optional)</label>
+                <textarea id="message" name="message" rows="8"></textarea>
+
+                <!-- Reply -->
+                <fieldset>
+                    <legend>Would you like a reply?</legend>
+
+                    <ul>
+
+                        <li><input type="radio" id="message-yes"
+                            name="reply" value="yes">
+                            <label for="message-yes">A reply would be nice.</label></li>
+                        <li><input type="radio" id="message-no"
+                            name="reply" checked>
+                            <label for="message-no">No thanks.</label>
+                            </li>
+
+                    </ul>
+
+                </fieldset>
+                <!-- Submit -->
+                <button type="Submit">Send</button>
+                </div>
+
+        </fieldset>
+
+    </form>
+
+</section>
+
 </main>
 <footer>
      ©2023 - Noah Mcmahan
