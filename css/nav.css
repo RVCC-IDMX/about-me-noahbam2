@@ -67,6 +67,11 @@ text-decoration: none;
 border: #504531 solid 2px;
 display: inline-block;
 }
+.navbar-links a:hover, .navbar-links a:focus {
+    filter: invert(1);
+    border-radius: 5px;
+    
+}
 
 
 
