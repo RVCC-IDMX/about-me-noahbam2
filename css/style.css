@@ -4,7 +4,7 @@ color: #6d3219;
 font-size: 200%;
 font-family: 'Labrada', serif;
 width: auto;
-padding: 100px;
+padding: 29px;
 max-width: 1800px;
 
 }
@@ -122,11 +122,11 @@ figcaption {
         background-color:#e4c692;
         columns: auto;
         display: grid;
-        align-items: center;
         justify-content: center;
         margin: 15px;
-        padding: 20px;
         columns: auto;
+        width: fit-content;
+    
     }
     @media screen and (min-width: 20em) {
         iframe {
