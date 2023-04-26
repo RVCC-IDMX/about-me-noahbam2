@@ -141,7 +141,7 @@ figcaption {
     }
     #contact {
         border: 8px solid #6b5c41;
-        margin: 15px;
+        margin: 10px;
         background-color: #e4c692;
         padding: 1em;
     }
@@ -153,5 +153,7 @@ figcaption {
     input, select, textarea, button {
         background-color: #fffadc;
         padding: .5rem;
+        border-radius: 20px;
     }
+   
 
