@@ -27,7 +27,6 @@ header {
     border: 8px solid #6b5c41;
     margin-top: 20fr;
     display: flex;
-    color: gray;
     flex-direction: column;
 }
 /*Hero*/

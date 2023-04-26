@@ -87,6 +87,7 @@ such that no text wraps
         display:flex;
         justify-content: space-between;
         width: fit-content;
+        justify-content: space-evenly;
     }
     .navbar {
         align-items: center;
