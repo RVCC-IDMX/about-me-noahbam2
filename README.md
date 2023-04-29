@@ -9,13 +9,15 @@ Noah Mcmahan!
 
 # Color scheme 
 ## Font color
-* `#6d3219`
+* hex:`#6d3219`rbg:`rgb(109, 50, 25)`
 ## Background color
-* `#928052`
+* hex:`#928052`rbg:`rgb(146, 128, 82)`
 ## Background within border
-* `#e4c692`
+* hex:`#e4c692`rgb:`rgb(228, 198, 146)`
 ## Borders
-* `#6b5c41`
+* hex:`#6b5c41`rbg:`rgb(107, 92, 65)`
 
 ## Visual example of navbar style
-!
+![image](https://user-images.githubusercontent.com/52337262/235316945-a4c5f4b5-fafd-4e41-9a7e-7c5b09c17e34.png)
+
+
