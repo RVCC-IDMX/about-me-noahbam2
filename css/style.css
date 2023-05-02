@@ -4,7 +4,7 @@ color: #6d3219;
 font-size: 200%;
 font-family: 'Labrada', serif;
 width: auto;
-padding: 29px;
+padding: 20px;
 }
 h1, h2, h3, h4, h5 {
     font-family:sans-serif;
@@ -25,7 +25,7 @@ header {
     align-items: center;
     background-color: #e4c692;
     border: 8px solid #6b5c41;
-    margin-top: 20fr;
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
 }
@@ -48,13 +48,15 @@ header {
 
 /* Photos */
 
-#gallery img {
+#gallery img:hover {
     max-width: 100%;
+    background-color:#705e3f;
+    background-position: 20px;
 }
+/* story */
 
 #lit {
     border: 8px solid #6b5c41;
-    margin-top:  20px;;
     margin-bottom: 20px;
     background-color: #e4c692; 
     margin:center;
@@ -73,6 +75,7 @@ header {
     font-size: 4rem;
 }
 /* Media */
+
  @media screen and (min-width: 5em) {
 figure {
     display: grid;
@@ -94,6 +97,14 @@ figcaption {
         columns: 40rem;
     }
 }
+@media screen and (min-width: 20em) {
+    iframe {
+        display: flex;
+        width: fit-content;
+        height: fit-content;
+
+    }
+}
 
     @media screen and (min-width: 50em) {
         
@@ -112,28 +123,33 @@ figcaption {
         figure {
             display: block;
         }
-    
-    }
-    
-    .videowrapper {
-        border: 8px solid #6b5c41;
-        background-color:#e4c692;
-        columns: auto;
-        display: grid;
-        justify-content: center;
-        margin: 15px;
-        columns: auto;
-        width: fit-content;
-    
-    }
-    @media screen and (min-width: 20em) {
         iframe {
             display: flex;
             width: fit-content;
             height: fit-content;
 
         }
+        
+    
     }
+    /*Video*/
+
+    .videowrapper {
+        border: 8px solid #6b5c41;
+        background-color:#e4c692;
+        columns: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 20px;
+        columns: auto;
+        width: fit-content;
+    }
+    #MyVideo {
+        display: flex;
+        justify-content: center;
+    }
+   
     /* Contact Form*/
     #formelements {
         display: grid;
