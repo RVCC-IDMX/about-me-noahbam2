@@ -7,31 +7,53 @@
     <title>About me</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@0..1000&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
 
 <link href="css/style.css" rel="stylesheet"/>
 <link href="css/nav.css" rel="stylesheet"/>
 
 </head>
 <body>
-    
-    <header>
-       <nav class="navbar">
+    <nav class="nav">
         <div class="logo">
-            <img src="img/Noah.png" alt="blue bird" width="250" height="225" >
+            <img src="img/Noah.png" alt="Noah" width="500" height="450" >
          <h1>Web Dev I</h1>
         </div>
-        <div class="navbar-links">
-            <ul>
-                <li><a href="#bio">Bio</a></li>
-                <li><a href="#gallery">Gallery</a></li>
-                <li><a href="#lit">Blog</a></li>
-                <li><a href="#contact">Contact Me</a></li>
-            </ul>
-        </div>
-       </nav>
-    </header>
-    
+        <input type="checkbox" id="nav__checkbox"
+        class="nav__checkbox">
+        <label for="nav__checkbox" class="nav__toggle">
+             <!--open Logo-->
+            <svg class="open" width="800px" height="800px" viewBox="0 0 24 24" fill="solid" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4 18L20 18" stroke="#000000" stroke-width="2" stroke-linecap="round"/>
+                <path d="M4 12L20 12" stroke="#000000" stroke-width="2" stroke-linecap="round"/>
+                <path d="M4 6L20 6" stroke="#000000" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+             <!--Close Logo-->
+            <svg class="close" width="800px" height="800px" viewBox="0 -0.5 8 8" version="1.1" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        
+                <title>close_mini [#1522]</title>
+                <desc>Created with Sketch.</desc>
+                <defs>
+            
+            </defs>
+                <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <g id="Dribbble-Light-Preview" transform="translate(-385.000000, -206.000000)" fill="#000000">
+                        <g id="icons" transform="translate(56.000000, 160.000000)">
+                            <polygon id="close_mini-[#1522]" points="334.6 49.5 337 51.6 335.4 53 333 50.9 330.6 53 329 51.6 331.4 49.5 329 47.4 330.6 46 333 48.1 335.4 46 337 47.4">
+            
+            </polygon>
+                        </g>
+                    </g>
+                </g>
+            </svg>
+        </label>
+        <ul class="nav__menu">
+            <li><a href="#bio">Biography</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#lit">Literature</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>    
 <main>
 
 <section id="hero">
@@ -123,9 +145,10 @@
 
 <article id="lit">
 
-    <h2>The Picture of Dorian Gray</h2>
+    <h2>Techniques for Rendering Scenes</h2>
 
     <div>
+        <h3>Raytracing</h3>
         <p>Gaming industries, Movie production studios, and practically any company who's dipping their toes into realism has most definitely used a
              technique for creating real
              world lighting called Raytracing. An article by NVidia put out a simplified way of explaining what raytracing is and what it does for the gaming and movie industry.
@@ -136,31 +159,35 @@
              might bounce off an object and back into the camera to produce a reflective material. All internally
               producing a convincing image. An image by NVidia showcases how the process is done:
             </p>
-
-            <section class="Image">
+            <section id="ArticleImages">
                 <img src="img/Ray_trace_diagram.svg" alt="Raytracing example" >
 
-                 <a href="https://developer.nvidia.com/discover/ray-tracing">Example Photo</a>
+                <a href="https://developer.nvidia.com/discover/ray-tracing">Example photo & website</a>
             </section>
+                
+        <p>
             
-
-
-        <p>He turned and hurried out, just conscious that the
-             dead man had been thrust back into the chair and that
-              Campbell was gazing into a glistening yellow face.
-               As he was going downstairs, he heard the key being
-                turned in the lock.</p>
-
-        <p>It was long after seven when Campbell came back into
-             the library. He was pale, but absolutely calm.
-              "I have done what you asked me to do," he muttered.
-               "And now, good-bye. Let us never see each other again."
+        </p>
+        <h3>Raymarching</h3>
+        <p>A similar topic on the process of ray tracing, there is also a much newer method known as raymarching, raymarching is a way to render entire environments
+             procedurally within a shader  way to instead of using actual geometry with quads, tris and other polygonal shapes that make up the shape of an object it
+              can mathematically produce shapes without using those aspects, since the process is entirely math based, ray marched objects will never lose quality as
+               you zoom into it. There are many different methods for approaching the same result with varying optimizations, but one that is called Sphere tracing is
+                a common one. An article posted on Wikipedia states,” The SDF is evaluated for each iteration in order to be able take as large steps as possible without
+                 missing any part of the surface.” (Wikipedia Contributors 3 May 2023). To sum it up, an algorithm uses a sphere to check whether
+             there is an object in the scene, after it hits a ray is shot from the camera and each iteration of the ray checks for when the sphere hits an object.   
             </p>
+            <section id="ArticleImages">
+                <img src="img/raymarch.png">
+                <a href="https://en.wikipedia.org/wiki/Ray_marching#:~:text=Ray%20marching%20is%20a%20class,some%20function%20at%20each%20step.">Example photo & website</a>
+            </section>
 
-        <p>"You have saved me from ruin, Alan. I cannot forget that,"
-             said Dorian simply.</p>
-
-        <p>It was a small party, got up rather in a hurry by Lady Narborough, who was a very clever woman with what Lord Henry used to describe as the remains of really remarkable ugliness. She had proved an excellent wife to one of our most tedious ambassadors, and having buried her husband properly in a marble mausoleum, which she had herself designed, and married off her daughters to some rich, rather elderly men, she devoted herself now to the pleasures of French fiction, French cookery, and French esprit when she could get it.</p>
+        <p>Raymarching has many benefits for improving perforance and replacing entire landscapes with endless terrain.
+             You can fill an entire scene with trees to create an endless world with almost no cost of performance. An example I found on ShaderToy:</p>
+             <section id="ArticleImages">
+                <a href="https://www.shadertoy.com/view/4ttSWf">Forest landscape</a>
+                <p>Created by iq</p>
+             </section>
     </div>
 
 </article>

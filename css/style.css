@@ -5,10 +5,77 @@ font-size: 200%;
 font-family: 'Labrada', serif;
 width: auto;
 padding: 20px;
+font-weight: 600 ;
+}
+
+/*Navbar*/
+.nav {
+    border-bottom: 2px solid #6d3219;
+    background-color: #e4c692;
+}
+.nav__toggle {
+    position:absolute;
+    cursor: pointer;
+    margin: -29rem 1rem;
+    right: 0;
+}
+svg {
+    width: 1.5rem;
+    fill: #66573b;
+}
+.close {
+    display: none;
+}
+.open {
+    margin-top: .2rem;
+}
+.nav__checkbox {
+  display: none;
+}
+.nav__menu {
+    display:flex;
+    flex-direction: column;
+    gap:2rem;
+    align-items: center;
+    margin: 1rem;
+}
+.nav__menu li {
+    list-style:none;
+    display:none;
+}
+.logo {
+    margin-right: auto;
+}
+.nav__menu a {
+    text-decoration: none;
+    font-size: 3rem;
+}
+#nav__checkbox:checked ~ul.nav__menu li{
+    display: block;
+}
+#nav__checkbox:checked ~ label.nav__toggle .close{
+    display:block;
+}
+#nav__checkbox:checked ~ label.nav__toggle .open{
+    display: none;
+}
+@media only screen and (min-width:560px){
+
+    .nav__toggle{
+        display:none;
+    }
+    .nav__menu{
+        flex-direction: row;
+    }
+    .nav__menu li{
+        display: block;
+    }
 }
 h1, h2, h3, h4, h5 {
-    font-family:sans-serif;
+    font-family: 'Oswald', sans-serif;
+    font-variation-settings: 'wght' 1000;
     text-align: center;
+  
 }
 h2 {
     font-size: 40pt;
@@ -53,7 +120,7 @@ header {
     background-color:#705e3f;
     background-position: 20px;
 }
-/* story */
+/* lit */
 
 #lit {
     border: 8px solid #6b5c41;
@@ -66,6 +133,21 @@ header {
     max-width: 150rem;
     margin: 0 auto;
 }
+#ArticleImages {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#ArticleImages p {
+    font-size: 25px;
+}
+
+/* Links */
+
+a {
+    color: #6d3219;
+}
 
 /* Dropcaps */
 
@@ -75,6 +157,14 @@ header {
     font-size: 4rem;
 }
 /* Media */
+
+@font-face {
+    font-family: 'Oswald', sans-serif;
+    src: url(/fonts/Oswald-VariableFont_wght.woff2) format('woff2-variations'); 
+    font-weight: 0 1000;
+    font-display: swap;
+
+}
 
  @media screen and (min-width: 5em) {
 figure {
@@ -157,7 +247,6 @@ figcaption {
     }
     #contact {
         border: 8px solid #6b5c41;
-        margin: 10px;
         background-color: #e4c692;
         padding: 1em;
     }
