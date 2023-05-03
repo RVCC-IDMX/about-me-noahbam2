@@ -115,7 +115,7 @@ header {
 
 /* Photos */
 
-#gallery img:hover {
+#gallery img{
     max-width: 100%;
     background-color:#705e3f;
     background-position: 20px;
@@ -141,6 +141,9 @@ header {
 }
 #ArticleImages p {
     font-size: 25px;
+}
+#ArticleImages img {
+    width: 100%;
 }
 
 /* Links */
