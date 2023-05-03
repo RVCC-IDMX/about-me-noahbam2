@@ -18,7 +18,7 @@ Noah Mcmahan!
 * hex:`#6b5c41`rbg:`rgb(107, 92, 65)`
 
 ## Visual example of navbar style
-![image](about-me-noahbam2/img/Screenshot 2023-05-03 132219.png)
+![image](https://github.com/RVCC-IDMX/about-me-noahbam2/blob/main/img/Screenshot%202023-05-03%20132219.png)
 
 ## Cited sources:
  * https://developer.nvidia.com/discover/ray-tracing
