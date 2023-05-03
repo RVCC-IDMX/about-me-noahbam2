@@ -20,7 +20,7 @@ Noah Mcmahan!
 ## Visual example of navbar style
 ![image](https://user-images.githubusercontent.com/52337262/235316945-a4c5f4b5-fafd-4e41-9a7e-7c5b09c17e34.png)
 
-##Cited sources:
+## Cited sources:
  * https://developer.nvidia.com/discover/ray-tracing
  * https://en.wikipedia.org/wiki/Ray_marching#:~:text=Ray%20marching%20is%20a%20class,some%20function%20at%20each%20step.
  * https://www.shadertoy.com/view/4ttSWf
